@@ -182,6 +182,20 @@ describe('DID tests', () => {
         wantDID: 'did:iden3:billions:test:2VxnoiNqdMPxUigcPf9LTfZdz7jSwQv8YscTjjH5zf'
       },
       {
+        title: 'TrustId chain, Main',
+        method: DidMethod.PolygonId,
+        chain: Blockchain.TrustId,
+        net: NetworkId.Main,
+        wantDID: 'did:polygonid:trust-id:main:3SGFfs7D37wQ2rwKboTdxUdSsHR3qxxSE9r3wSeEPR'
+      },
+      {
+        title: 'TrustId chain, Test',
+        method: DidMethod.PolygonId,
+        chain: Blockchain.TrustId,
+        net: NetworkId.Test,
+        wantDID: 'did:polygonid:trust-id:test:3STsj3dKxvm2Wb8WEsZGctmooQWm4nb3PiSLyQsNCF'
+      },
+      {
         title: 'Linea chain, Main',
         method: DidMethod.Iden3,
         chain: Blockchain.Linea,

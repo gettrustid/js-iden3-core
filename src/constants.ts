@@ -47,6 +47,7 @@ export const Blockchain: { [k: string]: string } = {
   Polygon: 'polygon',
   Privado: 'privado',
   Billions: 'billions',
+  TrustId: 'trust-id',
   Linea: 'linea',
   Unknown: 'unknown',
   NoChain: '',
@@ -90,7 +91,9 @@ export const ChainIds: { [key: string]: number } = {
   [`${Blockchain.Linea}:${NetworkId.Main}`]: 59144,
   [`${Blockchain.Linea}:${NetworkId.Sepolia}`]: 59141,
   [`${Blockchain.Billions}:${NetworkId.Main}`]: 45056,
-  [`${Blockchain.Billions}:${NetworkId.Test}`]: 6913
+  [`${Blockchain.Billions}:${NetworkId.Test}`]: 6913,
+  [`${Blockchain.TrustId}:${NetworkId.Main}`]: 2005,
+  [`${Blockchain.TrustId}:${NetworkId.Test}`]: 2004
 };
 
 export const DidMethodByte: { [key: string]: number } = {
@@ -114,7 +117,9 @@ const blockchainNetworkMap = {
   [`${Blockchain.Linea}:${NetworkId.Main}`]: 0b0100_0000 | 0b0000_1001,
   [`${Blockchain.Linea}:${NetworkId.Sepolia}`]: 0b0100_0000 | 0b0000_1000,
   [`${Blockchain.Billions}:${NetworkId.Main}`]: 0b1011_0000 | 0b0000_0001,
-  [`${Blockchain.Billions}:${NetworkId.Test}`]: 0b1011_0000 | 0b0000_0010
+  [`${Blockchain.Billions}:${NetworkId.Test}`]: 0b1011_0000 | 0b0000_0010,
+  [`${Blockchain.TrustId}:${NetworkId.Main}`]: 0b11000000 | 0b00000001,
+  [`${Blockchain.TrustId}:${NetworkId.Test}`]:  0b11000000 | 0b00000010,
 };
 
 // DIDMethodNetwork is map for did methods and their blockchain networks
