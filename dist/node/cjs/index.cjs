@@ -165,8 +165,8 @@ var ChainIds = {
   [`${Blockchain.Linea}:${NetworkId.Sepolia}`]: 59141,
   [`${Blockchain.Billions}:${NetworkId.Main}`]: 45056,
   [`${Blockchain.Billions}:${NetworkId.Test}`]: 6913,
-  [`${Blockchain.TrustId}:${NetworkId.Main}`]: 2005,
-  [`${Blockchain.TrustId}:${NetworkId.Test}`]: 2004
+  [`${Blockchain.TrustId}:${NetworkId.Main}`]: 87878,
+  [`${Blockchain.TrustId}:${NetworkId.Test}`]: 87877
 };
 var DidMethodByte = {
   [DidMethod.Iden3]: 1,

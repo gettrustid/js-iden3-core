@@ -8,6 +8,10 @@ TypeScript low-level API to create and manipulate iden3 Claims.
 
 All code here is experimental and WIP
 
+## Build
+
+`npm run build`
+
 ## Testing
 
 `npm run test`
